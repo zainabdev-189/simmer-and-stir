@@ -318,6 +318,8 @@ button:active {
   line-height: 1.65;
   color: #4a3f35;
   margin: 0 0 16px;
+  font-size: medium;
+  font-weight: 600;
 }
 
 .recipe-output ul:first-of-type {
