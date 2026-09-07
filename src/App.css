@@ -59,8 +59,8 @@ body {
 }
 
 .img {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
 }
 
@@ -384,4 +384,122 @@ button:active {
   .recipe-output {
     padding: 24px 20px;
   }
+}
+
+.savedRecipeItem {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 24px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+  text-align: left;
+}
+
+/* Shared heading/text fixes for both the live recipe output and saved recipe cards */
+.recipe-output h1,
+.savedRecipeItem h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2B2118;
+  margin: 0 0 12px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #E8DCC8;
+  opacity: 1;
+}
+
+.recipe-output h2,
+.savedRecipeItem h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #C1502E;
+  margin: 24px 0 10px;
+}
+
+.recipe-output h3,
+.savedRecipeItem h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2B2118;
+  margin: 18px 0 8px;
+}
+
+.recipe-output p,
+.savedRecipeItem p {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #4A3F35;
+  margin: 0 0 14px;
+}
+
+.recipe-output ul, .recipe-output ol,
+.savedRecipeItem ul, .savedRecipeItem ol {
+  margin: 0 0 16px;
+  padding-left: 22px;
+}
+
+.recipe-output li,
+.savedRecipeItem li {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: #4A3F35;
+  margin-bottom: 6px;
+}
+
+.recipe-output strong,
+.savedRecipeItem strong {
+  color: #2B2118;
+  font-weight: 600;
+}
+
+.saved-recipes {
+  max-width: 650px;
+  margin: 20px auto 0;
+}
+
+.saved-recipes h2 {
+  font-size: 1.25rem;
+  color: #2B2118;
+  margin-bottom: 14px;
+}
+
+.savedRecipeList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.savedRecipeHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.savedRecipeTimestamp {
+  font-size: 0.8125rem;
+  color: #6B7280;
+}
+
+.savedRecipeIngredients {
+  font-size: 0.875rem;
+  color: #6B7280;
+  margin: 0 0 12px;
+}
+
+.saved-recipes-toggle {
+  max-width: 650px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+.saved-recipes-toggle button {
+  background-color: transparent;
+  color: #C1502E;
+  border: 1px solid #C1502E;
+}
+
+.saved-recipes-toggle button:hover {
+  background-color: #FDF8F3;
 }

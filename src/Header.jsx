@@ -1,5 +1,5 @@
 import "./App.css"
-import img from "./assets/chef.png"
+import img from "./assets/stir.png"
 
 function Header(){
     return (
