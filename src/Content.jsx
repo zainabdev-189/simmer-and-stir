@@ -181,6 +181,12 @@ export default function Main() {
                 </section>
             }
 
+            {ingredientsListItems.length >= 1 && ingredientsListItems.length < 4 &&
+                <p className="minIngredientsHint">
+                    Add {4 - ingredientsListItems.length} more ingredient{4 - ingredientsListItems.length === 1 ? "" : "s"} to get a recipe (minimum 4).
+                </p>
+            }
+
             {ingredientsListItems.length >= 4 &&
                 <div className="get-recipe-container">
                     <div>
@@ -203,7 +209,7 @@ export default function Main() {
             {savedRecipes.length > 0 &&
                 <div className="saved-recipes-toggle">
                     <button onClick={() => setShowSaved(prev => !prev)}>
-                        {showSaved ? "Hide saved recipe(s)" : `Show saved recipe(s) (${savedRecipes.length})`}
+                        {showSaved ? "Hide saved recipes" : `Show saved recipes (${savedRecipes.length})`}
                     </button>
                 </div>
             }
